@@ -6,57 +6,106 @@ function Home() {
   return (
     <div className="home">
       <div className="home_container">
-        <img
-          className="home_image"
-          src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._cb428684220_.jpg"
-          alt=""
-        />
+        <img className="home_image" src="../Banner.jpg" alt="" />
+        <p className="product_heading1">New Arrivals</p>
         <div className="home_row">
           <Product
-            id="12321341"
-            title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
-            price={11.96}
+            id="1"
+            title="Samsung 43 Inch Smart Television"
+            price={179999}
             rating={5}
-            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
+            image="tv.jpg"
           />
           <Product
-            id="49538094"
-            title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
-            price={239.0}
+            id="2"
+            title="Iphone 13 Pro"
+            price={129999}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
+            image="iphone13.png"
+          />
+          <Product
+            id="3"
+            title="Mens Khaki Shirt"
+            price={1500}
+            rating={4}
+            image="dress5.jpg"
+          />
+
+          <Product
+            id="6"
+            title="Smart Watch"
+            price={3500}
+            rating={4}
+            image="smartwatch.png"
           />
         </div>
+        <p className="product_heading2">Top Selling</p>
         <div className="home_row">
           <Product
-            id="4903850"
-            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
-            price={199.99}
-            rating={3}
-            image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
-          />
-          <Product
-            id="23445930"
-            title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
-            price={98.99}
+            id="7"
+            title="Mens Casual Shirt Printed"
+            price={1200}
             rating={5}
-            image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
+            image="dress3.jpg"
           />
           <Product
-            id="3254354345"
-            title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
-            price={598.99}
+            id="8"
+            title="Apple Airpods White"
+            price={8500}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+            image="airpods.png"
+          />
+          <Product
+            id="9"
+            title="Apple Macbook M3 Chip"
+            price={99000}
+            rating={4}
+            image="macbook.png"
+          />
+          <Product
+            id="10"
+            title="Huawei Nova3 I "
+            price={55000}
+            rating={4}
+            image="huawei.png"
+          />
+          <Product
+            id="11"
+            title="Philips Sealer Black"
+            price={4500}
+            rating={4}
+            image="sealer.jpg"
           />
         </div>
+        <p className="product_heading2">Hot Deals</p>
         <div className="home_row">
           <Product
-            id="90829332"
-            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
-            price={1094.98}
+            id="12"
+            title="Turkish Singing Bowl"
+            price={1150}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
+            image="bowl.jpg"
+          />
+          <Product
+            id="13"
+            title="Duranto Life 22 Bicycle"
+            price={11500}
+            rating={4}
+            image="bike.jpg"
+          />
+          <Product
+            id="14"
+            title="Chopping Tray White"
+            price={1150}
+            rating={4}
+            image="tray.jpg"
+          />
+          <Product
+            id="15"
+            title="Men Black Tshirt"
+            price={350}
+            rating={4}
+            image="dress4.jpg"
           />
         </div>
       </div>
