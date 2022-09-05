@@ -1,8 +1,9 @@
 .subTotal {
     display: flex;
+    margin-left: 15%;
     flex-direction: column;
     justify-content: space-between;
-    width: 300px;
+    width: 450px;
     height: 100px;
     padding: 20px;
     background-color: #f3f3f3;
@@ -20,12 +21,14 @@
   }
   
   .subtotal_button {
-    background: #f0c14b;
-    border-radius: 2px;
-    width: 100%;
-    height: 30px;
+    background: #178200;
     border: 1px solid;
     margin-top: 10px;
-    border-color: #a88734 #9c7e31 #846a29;
-    color: #111;
+    color: white;
+    padding: 10px;
+    transition: background-color .5s;
+  }
+
+  .subtotal_button:hover {
+    background-color: #1DA64D;
   }

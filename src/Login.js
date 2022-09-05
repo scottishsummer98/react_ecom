@@ -10,20 +10,17 @@ function Login() {
   return (
     <div className="login">
       <Link to="/">
-        <img
-          className="login_logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png"
-        />
+        <img className="login_logo" src="Logo.png" />
       </Link>
 
       <div className="login_container">
         <h1>Sign-in</h1>
 
         <form>
-          <h5>E-mail</h5>
+          <h3>E-mail</h3>
           <input type="text" value={email} />
 
-          <h5>Password</h5>
+          <h3>Password</h3>
           <input type="password" value={password} />
 
           <button type="submit" className="login_signInButton">
@@ -32,13 +29,13 @@ function Login() {
         </form>
 
         <p>
-          By signing-in you agree to the AMAZON FAKE CLONE Conditions of Use &
-          Sale. Please see our Privacy Notice, our Cookies Notice and our
-          Interest-Based Ads Notice.
+          By signing-in you are agreeing to the term and services of eHAT. You
+          Will abide by the community guidelines to ensure a good experience for
+          everyone. Failing to do so will result in penalty
         </p>
 
         <button className="login_registerButton">
-          Create your Amazon Account
+          Create your eHAT Account
         </button>
       </div>
     </div>

@@ -30,8 +30,11 @@
     color: white;
     padding: 10px;
     border-radius: 5%;
+    transition: background-color .5s;
   }
-  
+  .product_button:hover {
+    background-color: #1DA64D;
+  }
   .product_price {
     margin-top: 5px;
     color: white;

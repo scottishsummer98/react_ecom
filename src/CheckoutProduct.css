@@ -9,12 +9,16 @@
 }
 
 .checkoutProduct_info_button {
-    background: #f0c14b;
+    background: #178200;
     border: 1px solid;
     margin-top: 10px;
-    border-color: #a88734 #9c7e31 #846a29;
-    color: #111;
+    color: white;
+    padding: 10px;
+    transition: background-color .5s;
 }
+.checkoutProduct_info_button:hover {
+    background-color: #1DA64D;
+  }
 
 .checkoutProduct_image {
     object-fit: contain;
