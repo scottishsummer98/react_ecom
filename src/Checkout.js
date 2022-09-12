@@ -12,7 +12,9 @@ function Checkout() {
         <img className="checkout_ad" src="Banner1.jpg" alt="Checkout Ad" />
 
         <div className="checkout_info_details">
-          <h2 className="checkout_title">Your Shopping Basket</h2>
+          <div>
+            <h2 className="checkout_title">{user.email}'s Shopping Basket</h2>
+          </div>
           {basket.map((item) => (
             <CheckoutProduct
               id={item.id}

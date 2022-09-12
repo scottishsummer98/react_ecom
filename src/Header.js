@@ -3,9 +3,16 @@ import './Header.css'
 import { Search, ShoppingBasket, SupervisorAccount } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 import { useStateValue } from './StateProvider'
+import { signOut } from 'firebase/auth'
+import { auth } from './firebase'
 
 function Header() {
-  const [{ basket }, dispatch] = useStateValue()
+  const [{ basket, user }, dispatch] = useStateValue()
+  const handleAuthentication = () => {
+    if (user) {
+      signOut(auth)
+    }
+  }
   return (
     <div className="header">
       <Link to="/">
@@ -17,9 +24,11 @@ function Header() {
       </div>
       <div className="header_nav">
         <Link to="/login">
-          <div className="header_nav_option">
+          <div className="header_nav_option" onClick={handleAuthentication}>
             <SupervisorAccount className="" />
-            <span className="header_optionLine">My Account</span>
+            <span className="header_optionLine">
+              {user ? 'Welcome!  Sign Out?' : 'Hello! Sign In?'}
+            </span>
           </div>
         </Link>
         <Link to="/checkout">
