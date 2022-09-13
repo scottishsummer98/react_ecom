@@ -8,6 +8,7 @@ import Login from './Login'
 import { auth } from './firebase'
 import { useStateValue } from './StateProvider'
 import { onAuthStateChanged } from 'firebase/auth'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
   const [{}, dispatch] = useStateValue()
@@ -31,6 +32,7 @@ function App() {
     <BrowserRouter>
       <div className="app">
         <Header />
+        <ToastContainer />
         <Routes>
           <Route
             path="/login"
