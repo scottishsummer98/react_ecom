@@ -1,11 +1,19 @@
 import React from 'react'
 import './CheckoutProduct.css'
 import { useStateValue } from './StateProvider'
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 function CheckoutProduct({ id, image, title, price, rating }) {
   const [{}, dispatch] = useStateValue()
-
+  const dangerToaster = () => {
+    toast.error('Product item ' + title + ' is removed from your cart', {
+      position: 'bottom-right',
+      autoClose: 5000,
+    })
+  }
   const removeFromBasket = () => {
+    console.log('Removed ' + id)
     dispatch({
       type: 'REMOVE_FROM_BASKET',
       id: id,
@@ -29,7 +37,10 @@ function CheckoutProduct({ id, image, title, price, rating }) {
             ))}
         </div>
         <button
-          onClick={removeFromBasket}
+          onClick={() => {
+            dangerToaster()
+            removeFromBasket()
+          }}
           className="checkoutProduct_info_button"
         >
           Remove From Basket

@@ -44,8 +44,8 @@ function Product({ id, title, price, image, rating }) {
       <img className="product_image" src={image} alt="" />
       <button
         onClick={() => {
-          addToBasket()
           successToaster()
+          addToBasket()
         }}
         className="product_button"
       >
